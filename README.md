@@ -16,7 +16,6 @@
 | 🖥️ Live Dashboard | [Open Dashboard](https://complaint-classifier-dashboard.onrender.com) |
 | ⚙️ API Documentation | [Swagger API Docs](https://complaint-classifier-api-7ahl.onrender.com/docs) |
 | 💻 GitHub Repository | [View Repository](https://github.com/gopikasoundhar/complaint-classifier) |
-| 🎬 Demo Video | Coming Soon |
 
 > **Note:** Both services run on Render's free tier and may sleep when idle. The first request after a break can take some time to load.
 
