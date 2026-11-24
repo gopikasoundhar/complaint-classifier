@@ -1,3 +1,4 @@
+
 services:
   - type: web
     name: complaint-classifier-api
@@ -11,3 +12,21 @@ services:
         sync: false
       - key: CONFIDENCE_THRESHOLD
         value: "0.6"
+
+  - type: web
+    name: complaint-classifier-dashboard
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt && pip install -r dashboard/requirements.txt
+    startCommand: streamlit run dashboard/streamlit_app.py --server.address 0.0.0.0 --server.port $PORT
+    envVars:
+      - key: API_URL
+        fromService:
+          type: web
+          name: complaint-classifier-api
+          envVarKey: RENDER_EXTERNAL_URL
+      - key: ADMIN_API_KEY
+        fromService:
+          type: web
+          name: complaint-classifier-api
+          envVarKey: ADMIN_API_KEY
