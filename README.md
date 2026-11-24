@@ -1,4 +1,4 @@
-# Complaint Category Classifier (PRJ-076)
+# Complaint Category Classifier 
 
 A machine learning service that reads a citizen complaint and assigns it to a category
 (Water Supply, Roads, Electricity, Sanitation, Public Transport, Healthcare). Predictions
@@ -7,8 +7,8 @@ them and retrain the model from a dashboard.
 
 **Author:** Gopika S, Cyber Department, PDKV (Reg No 411623149012)
 
-- Live API: `<add Render URL>` (docs at `/docs`)
-- Live dashboard: `<add Streamlit URL>`
+- Live API: `https://complaint-classifier-api-7ahl.onrender.com/docs`
+- Live dashboard: `https://complaint-classifier-dashboard.onrender.com/`
 - Demo video: `<add link>`
 
 ## Features
