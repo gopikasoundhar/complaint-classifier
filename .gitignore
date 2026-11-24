@@ -1,0 +1,10 @@
+venv/
+.venv/
+__pycache__/
+*.pyc
+*.joblib
+.env
+.pytest_cache/
+.streamlit/secrets.toml
+data/predictions_log.csv
+data/corrections.csv

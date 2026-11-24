@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: complaint-classifier-api
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt && python -m app.train
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    envVars:
+      - key: ADMIN_API_KEY
+        sync: false
+      - key: CONFIDENCE_THRESHOLD
+        value: "0.6"
